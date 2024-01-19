@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.webTitle {
+    color: blue;
+    font-size: 5rem;
+}
+
+.titleImg {
+    width: 50px;
+    margin: 0vw 1vw;
+}
+
+.webSlogan1 {
+    font-size: 3rem;
+}
+
+.webSlogan2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.bookHubBig {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(228, 224, 224);
+}
+
+.webIntro {
+    width: 60vw;
+}
+
+.formContain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 9px 0px #5e5a5a;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formTitle {
+    text-align: center;
+    margin: 2vh 0;
+}
+
+.inpBox {
+    width: 80%;
+    margin: 2vh 2vw;
+    padding: 1vw;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.entryBtn {
+    width: 40%;
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    margin: 2vh 2vw;
+    padding: 1vw;
+    font-size: large;
+    font-weight: bold;
+}
+
+.entryBtn:hover {
+    background-color: rgb(39, 39, 243);
+    cursor: pointer;
+}
+
+.goToRegister {
+    width: 80%;
+    background-color: green;
+    border-radius: 8px;
+    border: none;
+    margin: 2vh 2vw;
+    padding: 1vw;
+    font-size: large;
+    font-weight: bold;
+}
+
+.goToRegister:hover {
+    background-color: rgb(8, 157, 8);
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+::placeholder {
+    font-size: large;
+}
+
+.entryErrorShow {
+    color: red;
+}
+
+hr {
+    width: 95%;
+    color: rgb(80, 77, 77);
+}
+
+.formUnderline:hover {
+    color: rgb(4, 4, 80);
+}
+
+form p {
+    margin-bottom: 2vh;
+}
+
+.belowFormAdminTextBig {
+    font-size: large;
+    font-weight: bold;
+}
+
+.formTitle {
+    margin: 2vh 0;
+    text-align: center;
+}
+
+.belowFormSmall {
+    margin-top: 2vh;
+}
