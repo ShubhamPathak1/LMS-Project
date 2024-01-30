@@ -50,7 +50,7 @@
             <h4 class="webSlogan2"><span class="bookHubBig">BookHub</span> - Read. Manage. Thrive: Navigating the World of Books with Ease.</h4>
         </div>
         <div class="LoginContain formContain">
-            <form action="userlogin.php" method="post">
+            <form action="userlogin.php" method="post" class="logregForm">
                 <h1 class="formTitle">Login to Book Hub</h1>
                 <input type="text" name="username" id="username" class="inpBox usernameInput" placeholder="Username" maxlength="50">
                 <input type="password" name="pwd" id="pwd" class="inpBox emailInput" placeholder="Password">

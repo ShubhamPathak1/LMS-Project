@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             <h4 class="webSlogan2"><span class="bookHubBig">BookHub</span> - Read. Manage. Thrive: Navigating the World of Books with Ease.</h4>
         </div>
         <div class="RegisterContain formContain">
-            <form action="register.php" method="post">
+            <form action="register.php" method="post" class="logregForm">
                 <h1 class="formTitle">Register to Book Hub</h1>
                 <input type="text" name="username" id="username" class="inpBox usernameInput" placeholder="Username" maxlength="50">
                 <input type="email" name="emailId" id="emailId" class="inpBox emailInput" placeholder="Email Address">

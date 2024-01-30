@@ -6,6 +6,8 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* USERLOGIN, ADMINLOGIN, REGISTER */
+
 .webTitle {
     color: blue;
     font-size: 5rem;
@@ -50,7 +52,7 @@
     justify-content: center;
 }
 
-form {
+.logregForm {
     background-color: white;
     border-radius: 8px;
     box-shadow: 2px 2px 9px 0px #5e5a5a;
@@ -113,10 +115,16 @@ button a {
 
 ::placeholder {
     font-size: large;
+    padding-left: 5px;
 }
 
 .entryErrorShow {
     color: red;
+}
+.entrySuccessShow {
+    color: green;
+    font-weight: bold;
+    font-size: x-large;
 }
 
 hr {
@@ -144,4 +152,306 @@ form p {
 
 .belowFormSmall {
     margin-top: 2vh;
+}
+
+/* PAGE */
+.pageFlex {
+    display: flex;
+    justify-content: space-around;
+}
+.mainPage {
+    /* border: 1px solid red; */
+    padding-left: 3vw;
+    padding-top: 1vh;
+    background-color: rgb(228, 224, 224);
+    position: absolute;
+    /* flex: 1; */
+    /* width: 82vw; */
+    left: 18vw;
+    /* bottom: 0vh; */
+    /* bottom: auto; */
+    min-height: 100%;
+    box-sizing: border-box;
+    top: 0vh;
+    right: 0vw;
+    display: flex;
+    flex-direction: column;
+}
+.pageTitle {
+    margin-left: 2vw;
+}
+/* adminindex */
+
+/* userindex */
+.usermainPage {
+    display: flex;
+    margin-top: 0px;
+}
+.userotherPage {
+    margin-top: 0px;
+    position: absolute;
+    top: 9vh;
+    left: 0;
+    right: 0;
+    min-height: 91%;
+    box-sizing: border-box;
+    background-color: rgb(228, 224, 224);
+    padding: 1vh 3vw;
+}
+
+.insideUserPage {
+    top: 9vh;
+    right: 0;
+    min-height: 91%;
+    background-color: rgb(228, 224, 224);
+    box-sizing: border-box;
+    padding: 1vh 3vw;
+    width: 100vw;
+}
+.aboutlibrary {
+    position: absolute;
+    left: 0;
+    /* border: 1px solid red; */
+    width: 75vw;
+    /* width: 70%; */
+}
+.aboutuser {
+    position: fixed;
+    /* border: 1px solid red; */
+    width: 25vw;
+    /* visibility: hidden; */
+}
+.insideAboutUser {
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    margin: 2vh 0vw;
+    padding: 1vh 1vw;
+}
+.aboutUserInfos {
+    margin-top: 3vh;
+    font-weight: bolder;
+    font-size: larger;
+}
+/* NAVBAR */
+.navBox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* border: 1px solid blue; */
+}
+.navBoxU {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 18vw;
+    height: 100vh;
+    list-style-type: none;
+}
+.navbarU {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    /* height: 15vh; */
+    list-style-type: none;
+    /* border: 1px solid red; */
+}
+.leftrightNav {
+    display: flex;
+    /* border: 1px solid blue; */
+}
+.leftNav {
+    padding-left: 2vw;
+}
+.rightNav {
+    padding-right: 2vw;
+}
+
+.adminNavItems {
+    padding: 3vh 2vw;
+    /* background-color: rgb(65, 65, 105); */
+    /* border-bottom: 1px solid rgb(0, 0, 54); */
+    margin: 0vh 1vw;
+}
+.userNavItems {
+    padding: 3vh 0.5vw;
+    margin: 0vh 0.5vw;
+}
+.adminNavItems:hover {
+    background-color: rgb(192, 187, 187);
+    border-radius: 5px;
+}
+
+.webName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5vh;
+    text-decoration: none;
+}
+.titleText {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 1vh 1vw;
+}
+
+.navText {
+    font-weight: bold;
+    font-size: large;
+    color: black;
+    text-decoration: none;
+}
+/* Dropdrown */
+/* .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    min-width:max-content;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 1px 1px 2px 2px black;
+    border-radius: 3px;
+}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropItem {
+    text-decoration: none;
+    display: block;
+    font-size: medium;
+    border: 2px solid red;
+    padding: 1vh 1vw;
+} */
+
+/* ENTRY FORMS */
+
+.addformContain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.addForm {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+
+.dataEntryInput {
+    width: 50%;
+    margin: 3vh 2vw;
+    height: 7vh;
+    border-radius: 5px;
+    border: 1px solid blue;
+    /* padding: 0vh 1vw; */
+}
+
+.addBtn {
+    border-radius: 5px;
+    color: white;
+    background-color: green;
+    padding: 1.5vh 2vw;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    width: 40%;
+}
+.addBtn:hover {
+    background-color: rgb(8, 157, 8);
+    cursor: pointer;
+}
+
+/* DETAILS */
+.displayPage {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid blue; */
+    justify-content: center;
+
+}
+.displayBox {
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    margin: 2vh 2vw;
+    margin-left: 0;
+    padding: 2vh 1vw;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20vw;
+}
+
+
+.afterNamemainDetails {
+    /* display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 15vw; */
+    /* text-align: left; */
+    /* border: 1px soild red; */
+}
+
+.largeDetailsText {
+    /* font-size: large; */
+    font-weight: bold;
+}
+.detailsNameTitle {
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.detailsImgBox {
+    border: 1px solid red;
+    width: 6vw;
+    height: 15vh;
+    border-radius: 5px;
+    /* width: 80px;
+    height: 80px; */
+}
+
+.filterSortBox {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2vw; 
+
+}
+
+
+.filterDrop {
+    width: 10vw;
+    margin: 0;
+}
+
+/* Under MyProflie */
+.underMyProfileDrop {
+    /* width: 20vw;
+    position: absolute;
+    top: 9vh;
+    border: 1px soild red;
+    background-color: blue; */
+    /* display: none; */
 }
