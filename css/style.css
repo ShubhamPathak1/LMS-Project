@@ -470,13 +470,13 @@ form p {
 }
 
 
-.afterNamemainDetails {
+/* .afterNamemainDetails { */
     /* display: grid;
     grid-template-columns: auto auto;
     column-gap: 15vw; */
     /* text-align: left; */
     /* border: 1px soild red; */
-}
+/* } */
 .detailP {
     margin: 1vh 0vw;
     padding: 1vh 1vw;
@@ -515,14 +515,14 @@ form p {
 }
 
 /* Under MyProflie */
-.underMyProfileDrop {
+/* .underMyProfileDrop { */
     /* width: 20vw;
     position: absolute;
     top: 9vh;
     border: 1px soild red;
     background-color: blue; */
     /* display: none; */
-}
+/* } */
 
 /* My Profile */
 .displayProfile {
