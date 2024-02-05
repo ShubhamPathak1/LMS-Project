@@ -6,11 +6,12 @@ function creditPointControl($conn, $uid, $trdate, $rdate) {
     if ($returningdate < $toreturndate) {
         $earlyInterval = date_diff($toreturndate, $returningdate);
         $earlyDays = $earlyInterval->days;
-        if ($earlyDays>10) {
-            $changeCP = 0;
-        } else {
-            $changeCP = $earlyDays * 10;
-        }
+        // if ($earlyDays>10) {
+        //     $changeCP = 0;
+        // } else {
+        //     $changeCP = $earlyDays * 10;
+        // }
+        $changeCP = $earlyDays * 10;
     } elseif ($returningdate > $toreturndate) {
         $lateInterval = date_diff($toreturndate, $returningdate);
         $lateDays = $lateInterval->days;

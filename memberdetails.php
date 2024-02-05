@@ -28,15 +28,15 @@
                         $emailid = $rows['emailid'];
                         $regdate = $rows['regdate'];
                         $creditpoint = $rows['creditpoint'];
+                        // <div class="detailsImgBox"><img src="" alt="Profile Pic"></div>
                         echo '
                             <div class="displayBox">
-                            <div class="detailsImgBox"><img src="" alt="Profile Pic"></div>
                             <h3 class="detailsNameTitle">' . $username . '</h3>
                             <div class="afterNamemainDetails">
-                            <p class="">User Id: <span class="detailsText "> ' . $uid . '</span></p>
-                            <p class="">Email Id: <span class="detailsText largeDetailsText"> ' . $emailid . '</span></p>
-                            <p class="">Registered Date: <span class="detailsText largeDetailsText"> ' . $regdate . '</span></p>
-                            <p class="">Credit Points: <span class="detailsText largeDetailsText"> ' . $creditpoint . '</span></p>
+                            <p class="detailP">User Id: <span class="detailsText "> ' . $uid . '</span></p>
+                            <p class="detailP">Email Id: <span class="detailsText largeDetailsText"> ' . $emailid . '</span></p>
+                            <p class="detailP">Registered Date: <span class="detailsText largeDetailsText"> ' . $regdate . '</span></p>
+                            <p class="detailP">Credit Points: <span class="detailsText largeDetailsText"> ' . $creditpoint . '</span></p>
                             </div>
                             </div>';
                     }

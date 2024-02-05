@@ -1,0 +1,1 @@
+CREATE TABLE category (catid int primary key AUTO_INCREMENT, categoryname varchar(100) not null) AUTO_INCREMENT=501;

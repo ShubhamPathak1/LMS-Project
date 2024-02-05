@@ -181,7 +181,62 @@ form p {
     margin-left: 2vw;
 }
 /* adminindex */
+.adminDashGrid {
+    /* display: grid;
+    grid-template: 
+    'grid1 grid2'
+    'grid3 grid4'
+    'grid5 grid6'; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 1vw;
+    /* border: 1px solid green; */
+}
+.gridCol {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    /* justify-content: flex-start; */
+}
 
+.insideDashGrid {
+    background-color: white;
+    margin: 2vh 1vw;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px 0px #5e5a5a;
+    width: 35vw;
+    /* min-height: 30vh; */
+}
+.gridTopic {
+    margin: 2vh 1vw;
+}
+.dashGridTexts {
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+    font-size: large;
+}
+/* .bookIssuesToday{
+    grid-area: grid1;
+}
+.bookaddedFewDays{
+    grid-area: grid2;
+}
+.bookFewSamples{
+    grid-area: grid3;
+}
+.booksNotReturnedAfterDeadline{
+    grid-area: grid4;
+}
+.usersHighLowCP{
+    grid-area: grid5;
+}
+.usersaddedFewDays{
+    grid-area: grid6;
+} */
 /* userindex */
 .usermainPage {
     display: flex;
@@ -227,11 +282,18 @@ form p {
     border: none;
     margin: 2vh 0vw;
     padding: 1vh 1vw;
+    box-shadow: 2px 2px 9px 0px #5e5a5a;
 }
 .aboutUserInfos {
     margin-top: 3vh;
     font-weight: bolder;
     font-size: larger;
+}
+
+.normalUindexText {
+    margin: 1vh 1vw;
+    font-size: large;
+
 }
 /* NAVBAR */
 .navBox {
@@ -243,6 +305,7 @@ form p {
 .navBoxU {
     position: fixed;
     left: 0;
+    box-shadow: 2px 2px 9px 0px #5e5a5a;
     top: 0;
     z-index: 5;
     background-color: white;
@@ -392,7 +455,7 @@ form p {
 }
 .displayBox {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
     margin: 2vh 2vw;
     margin-left: 0;
@@ -403,6 +466,7 @@ form p {
     justify-content: space-between;
     align-items: center;
     width: 20vw;
+    box-shadow: 2px 2px 9px 0px #5e5a5a;
 }
 
 
@@ -412,6 +476,10 @@ form p {
     column-gap: 15vw; */
     /* text-align: left; */
     /* border: 1px soild red; */
+}
+.detailP {
+    margin: 1vh 0vw;
+    padding: 1vh 1vw;
 }
 
 .largeDetailsText {
@@ -454,4 +522,19 @@ form p {
     border: 1px soild red;
     background-color: blue; */
     /* display: none; */
+}
+
+/* My Profile */
+.displayProfile {
+    width: 40vw;
+    background-color: white;
+    box-shadow: 2px 2px 9px 0px #5e5a5a;
+    border: none;
+    border-radius: 8px;
+    padding: 2vh 2vw;
+    /* margin: 2vh 1vw; */
+    margin: auto;
+    margin-top: 5vh;
+    font-size: large;
+    /* font-weight: bold; */
 }

@@ -7,7 +7,7 @@
             <li class="navItems userNavItems"><a href="findbooks.php" class="navText adminNavText">Find Books</a></li>
         </div>
         <div class="leftrightNav rightNav">
-            <li class="navItems userNavItems"><a href="" class="navText adminNavText">My Profile</a></li>
+            <li class="navItems userNavItems"><a href="myprofile.php" class="navText adminNavText">My Profile</a></li>
             <li class="navItems userNavItems"><a href="logout.php" class="navText adminNavText">Logout</a></li>
             <!-- <li class="navItems dropdown">
                 <a href="" class="navText dropText"><i class="fa-solid fa-user"></i></a>

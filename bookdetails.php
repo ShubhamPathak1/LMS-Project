@@ -71,33 +71,17 @@
                             $authorname = ucfirst($rows['authorname']);
                             $noofcopies = $rows['noofcopies'];
                             $copiesavailable = $rows['copiesavailable'];
-                            // echo '
-                            // <div class="displayBox">
-                            // <div class="detailsTextBox">
-                            // <h3 class="detailsNameTitle">' . $bookname . '</h3>
-                            // <div class="afterNamemainDetails">
-                            // <p class="">Book Number: <span class="detailsText "> ' . $booknumber . '</span></p>
-                            // <p class="">Category: <span class="detailsText largeDetailsText"> ' . $categoryname . '</span></p>
-                            // <p class="">Publication: <span class="detailsText largeDetailsText"> ' . $publicationname . '</span></p>
-                            // <p class="">Author: <span class="detailsText largeDetailsText"> ' . $authorname . '</span></p>
-                            // <p class="">Total Copies: <span class="detailsText"> ' . $noofcopies . '</span></p>
-                            // <p class="">Copies Available: <span class="detailsText largeDetailsText"> ' . $copiesavailable . '</span></p>
-                            // </div>
-                            // </div>
                             // <div class="detailsImgBox"><img src="" alt="Book Image"></div>
-                            // </div>';
                             echo '
-                            
                             <div class="displayBox">
-                            <div class="detailsImgBox"><img src="" alt="Book Image"></div>
                             <h3 class="detailsNameTitle">' . $bookname . '</h3>
                             <div class="afterNamemainDetails">
-                            <p class="">Book Number: <span class="detailsText "> ' . $booknumber . '</span></p>
-                            <p class="">Category: <span class="detailsText largeDetailsText"> ' . $categoryname . '</span></p>
-                            <p class="">Publication: <span class="detailsText largeDetailsText"> ' . $publicationname . '</span></p>
-                            <p class="">Author: <span class="detailsText largeDetailsText"> ' . $authorname . '</span></p>
-                            <p class="">Total Copies: <span class="detailsText"> ' . $noofcopies . '</span></p>
-                            <p class="">Copies Available: <span class="detailsText largeDetailsText"> ' . $copiesavailable . '</span></p>
+                            <p class="detailP">Book Number: <span class="detailsText "> ' . $booknumber . '</span></p>
+                            <p class="detailP">Category: <span class="detailsText largeDetailsText"> ' . $categoryname . '</span></p>
+                            <p class="detailP">Publication: <span class="detailsText largeDetailsText"> ' . $publicationname . '</span></p>
+                            <p class="detailP">Author: <span class="detailsText largeDetailsText"> ' . $authorname . '</span></p>
+                            <p class="detailP">Total Copies: <span class="detailsText"> ' . $noofcopies . '</span></p>
+                            <p class="detailP">Copies Available: <span class="detailsText largeDetailsText"> ' . $copiesavailable . '</span></p>
                             </div>
                             </div>
                             ';

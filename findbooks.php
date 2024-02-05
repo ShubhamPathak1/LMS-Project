@@ -76,20 +76,20 @@
                     // $noofcopies = $rows['noofcopies'];
                     $copiesavailable = $rows['copiesavailable'];
                     if ($copiesavailable>0) {
-                        $available = "Available";
+                        $available = "AVAILABLE";
                     } else {
-                        $available = "Not Available";
+                        $available = "NOT AVAILABLE";
                     }
+                    // <div class="detailsImgBox"><img src="" alt="Book Image"></div>
                     echo '
                             
                             <div class="displayBox">
-                            <div class="detailsImgBox"><img src="" alt="Book Image"></div>
                             <h3 class="detailsNameTitle">' . $bookname . '</h3>
                             <div class="afterNamemainDetails">
-                            <p class="">Category: <span class="detailsText largeDetailsText"> ' . $categoryname . '</span></p>
-                            <p class="">Publication: <span class="detailsText largeDetailsText"> ' . $publicationname . '</span></p>
-                            <p class="">Author: <span class="detailsText largeDetailsText"> ' . $authorname . '</span></p>
-                            <p class="">Copies Available: <span class="detailsText largeDetailsText"> ' . $available . '</span></p>
+                            <p class="detailP">Category: <span class="detailsText largeDetailsText"> ' . $categoryname . '</span></p>
+                            <p class="detailP">Publication: <span class="detailsText largeDetailsText"> ' . $publicationname . '</span></p>
+                            <p class="detailP">Author: <span class="detailsText largeDetailsText"> ' . $authorname . '</span></p>
+                            <p class="detailP"><span class="detailsText largeDetailsText"> ' . $available . '</span></p>
                             </div>
                             </div>
                             ';

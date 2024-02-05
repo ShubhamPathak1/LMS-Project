@@ -1,4 +1,5 @@
 <?php require '_dbconnect.php';
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,19 +13,26 @@
 
 <body>
     <?php require_once 'usernav.php' ?>
-    <!-- <div class="usermainPage">
-        <div class="aboutlibrary insideUserPage">
-            <h1 class="pageTitle">Find Books</h1>
-        </div>
-    </div> -->
     <div class="userotherPage">
         <h1 class="pageTitle">My Profile</h1>
-        <div class="addformContain">
-            <form action="myprofile.php" class="addForm" method="post">
-                <label for="username">Username: </label><input type="text" name="username" id="username" readonly class="dataEntryInput" placeholder="Issue Date" value="My username">
-                
-                <input type="text" name="toreturndate" id="toreturndate" readonly class="dataEntryInput" placeholder="Return Deadline">
-            </form>
+        <div class="displayProfile">
+            <?php
+            $getUsername = $_SESSION['usernameMember'];
+            $myprofileFetchSql = "SELECT username, emailid, regdate, creditpoint from members where username = '$getUsername'";
+            $myprofileFetchResult = mysqli_query($conn, $myprofileFetchSql);
+            if (mysqli_num_rows($myprofileFetchResult) > 0) {
+                $rows = mysqli_fetch_assoc($myprofileFetchResult);
+                $username = $rows['username'];
+                $emailid = $rows['emailid'];
+                $regdate = $rows['regdate'];
+                $creditpoint = $rows['creditpoint'];
+                echo '<p class="detailP">Username: <span class="largeDetailsText"> ' . $username . '</span></p>
+                <p class="detailP">Email Id: <span class="largeDetailsText"> ' . $emailid . '</span></p>
+                <p class="detailP">Registered Date: <span class="largeDetailsText"> ' . $regdate . '</span></p>
+                <p class="detailP">Credit Points: <span class="largeDetailsText"> ' . $creditpoint . '</span></p>';
+            }
+            ?>
+                    
         </div>
     </div>
 </body>
