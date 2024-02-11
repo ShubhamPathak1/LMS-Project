@@ -11,8 +11,10 @@
             if (mysqli_num_rows($searchBookResult) > 0) {
                 $rowCopies = mysqli_fetch_assoc($searchBookResult);
                 $presentCopies = $rowCopies['noofcopies'];
+                $presentAvailableCopies = $rowCopies['copiesavailable'];
                 $copiesToAdd = $presentCopies + $addnoofcopies; 
-                $updateCopiesQuery = "UPDATE books set noofcopies=$copiesToAdd where bookname='$bookname'";
+                $copiesNewAvailable = $presentAvailableCopies + $addnoofcopies;
+                $updateCopiesQuery = "UPDATE books set noofcopies=$copiesToAdd, copiesavailable=$copiesNewAvailable  where bookname='$bookname'";
                 $updateCopiesResult = mysqli_query($conn, $updateCopiesQuery);
                 if ($updateCopiesQuery) {
                     $addCopiesSuccess = true;
