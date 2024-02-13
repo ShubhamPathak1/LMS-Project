@@ -25,20 +25,40 @@
                     while ($rows = mysqli_fetch_assoc($memberFetchResult)) {
                         $uid = $rows['uid'];
                         $username = strtoupper($rows['username']);
+                        $usernameBook = $rows['username'];
                         $emailid = $rows['emailid'];
                         $regdate = $rows['regdate'];
                         $creditpoint = $rows['creditpoint'];
+                        
                         // <div class="detailsImgBox"><img src="" alt="Profile Pic"></div>
+                        
+                        echo '<div class="displayBox">'; 
                         echo '
-                            <div class="displayBox">
                             <h3 class="detailsNameTitle">' . $username . '</h3>
                             <div class="afterNamemainDetails">
                             <p class="detailP">User Id: <span class="detailsText "> ' . $uid . '</span></p>
                             <p class="detailP">Email Id: <span class="detailsText largeDetailsText"> ' . $emailid . '</span></p>
                             <p class="detailP">Registered Date: <span class="detailsText largeDetailsText"> ' . $regdate . '</span></p>
-                            <p class="detailP">Credit Points: <span class="detailsText largeDetailsText"> ' . $creditpoint . '</span></p>
-                            </div>
-                            </div>';
+                            <p class="detailP">Credit Points: <span class="detailsText largeDetailsText"> ' . $creditpoint . '</span></p>';
+                            echo '<br>';
+                            echo '<p class="largeDetailsText">BOOKS BORROWED:</p>';
+
+                            $getMyBooksQuery = "SELECT books.bookname from bookissued join books on bookissued.bookid=books.bookid join members on bookissued.uid=members.uid where members.username='$usernameBook'";
+                            $getMyBooksResult = mysqli_query($conn, $getMyBooksQuery);
+                            if (mysqli_num_rows($getMyBooksResult)>0) {
+                                while($rows = mysqli_fetch_assoc($getMyBooksResult)) {
+                                    $bookname = $rows['bookname'];
+                                    // $toreturndate = $rows['toreturndate'];
+                                    echo "<p class='detailP'>$bookname</p>";
+                                    // echo "<p class=''>Return By: $toreturndate</p>";
+                                }
+                            } else {
+                                echo '<p class="detailP">No Books Borrowed.</p>';
+                            }
+                            
+                            echo '</div>';
+                            echo '</div>';
+                        
                     }
                 }
 
